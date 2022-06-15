@@ -21,10 +21,12 @@ class SplashPage extends StatelessWidget {
             
           },
           loadingSuccess: (val) {
-            val.profile.isFirst
+            // first Page state will be handle later
+            //val.profile.isFirst
                 // if this login is first to be guided this route ↓
-                ? context.router.replace(const FirstTimeRoute())
-                : context.router.replace(const HomeRoute());
+               // ? context.router.replace(const FirstTimeRoute())
+               // : context.router.replace(const HomeRoute());
+                 context.router.replace(const HomeRoute());
           },
           loadingFailure: (_) {
               
